@@ -1,12 +1,13 @@
+</div>
 </div> <!-- /.container -->
-
-<footer class="blog-footer">
-    <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a
-                href="https://twitter.com/mdo">@mdo</a>.</p>
-    <p>
-        <a href="#">Back to top</a>
-    </p>
-</footer>
+<div class="container-fluid">
+    <div class="container">
+        <footer class="blog-footer">
+            <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a
+                        href="https://twitter.com/mdo">@mdo</a>.</p>
+        </footer>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
