@@ -1,6 +1,6 @@
 </div>
 </div> <!-- /.container -->
-<div class="container-fluid">
+<div class="container-fluid wrap-footer">
     <div class="container">
         <footer class="blog-footer">
             <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a
