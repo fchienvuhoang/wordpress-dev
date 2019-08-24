@@ -1,13 +1,8 @@
-<div class="blog-post">
-    <h2 class="blog-post-title">Sample blog post</h2>
-    <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
-    <p>
-        This blog post shows a few different types of content that's supported and styled with
-        Bootstrap. Basic typography, images, and code are all supported.
-    </p>
-    <hr />
-
-    <!-- the rest of the content -->
+<div class="col-md-6 blog-item">
+    <h2>
+        <div class="wrap-post-thumbnail">
+            <img src="<?php the_post_thumbnail_url() ?>"/>
+        </div>
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    </h2>
 </div>
-<!-- /.blog-post -->

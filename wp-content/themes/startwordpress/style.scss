@@ -1,3 +1,17 @@
 body {
   display: block;
 }
+
+.wp-block-cover-image.has-background-dim:before, .wp-block-cover.has-background-dim:before {
+  opacity: 0 !important;
+}
+
+.wrap-list-blog-posts {
+  .blog-item {
+    .wrap-post-thumbnail {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,8 +1,13 @@
 <?php get_header(); ?>
-    <div class="row">
-        <div class="col-sm-8 blog-main">
-            <?php get_template_part('content', get_post_format()); ?>
-        </div> <!-- /.blog-main -->
-        <?php get_sidebar(); ?>
+    <div class="row wrap-list-blog-posts">
+       <div class="col-md-8">
+          <div class="row">
+              <?php
+              if (have_posts()) : while (have_posts()) : the_post();
+                  get_template_part('content', get_post_format());
+              endwhile; endif; ?>
+              <!-- /.blog-main -->
+          </div>
+       </div>
     </div> <!-- /.row -->
 <?php get_footer(); ?>
