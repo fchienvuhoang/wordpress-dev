@@ -24,18 +24,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">How to Dropship</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">What to sell</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">
-                            Marketing your store
-                        </a>
-                    </li>
+                    <?php foreach (get_categories() as $key => $value) { ?>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="<?php echo $value->slug ?>"><?php echo $value->name ?></a>
+                        </li>
+                    <?php } ?>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
