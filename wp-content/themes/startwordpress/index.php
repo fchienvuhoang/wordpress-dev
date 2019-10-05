@@ -7,12 +7,6 @@
                     get_template_part('content', get_post_format());
                 endwhile; endif; ?>
                 <!-- /.blog-main -->
-
-                <?php
-                global $post;
-                $category = get_the_category($post->ID);
-                var_dump($category);
-                ?>
             </div>
         </div>
     </div> <!-- /.row -->
